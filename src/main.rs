@@ -24,7 +24,7 @@ fn main() {
 
     let input_path = Path::new(&args.input);
     let content = fs::read_to_string(input_path).unwrap_or_else(|err| {
-        eprintln!("❌ Failed to read {}: {}", args.input, err);
+        eprintln!("Failed to read {}: {}", args.input, err);
         process::exit(1);
     });
 
@@ -35,10 +35,10 @@ fn main() {
     match &args.output {
         Some(output_file) => {
             if let Err(e) = fs::write(output_file, html_output) {
-                eprintln!("❌ Failed to write {}: {}", output_file, e);
+                eprintln!("Failed to write {}: {}", output_file, e);
                 process::exit(1);
             }
-            println!("✅ HTML written to {}", output_file);
+            println!("HTML written to {}", output_file);
         }
         None => {
             println!("{}", html_output);
