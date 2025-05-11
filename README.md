@@ -29,9 +29,9 @@ cargo build --release
 ```
 ## Usage
 ### Convert markdown and save to HTML file
-- ./target/release/md2html input.md -o output.html
+`./target/release/md2html input.md -o output.html`
 
 ### Print HTML to terminal
-- ./target/release/md2html input.md
+`./target/release/md2html input.md`
 
 
