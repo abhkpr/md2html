@@ -22,7 +22,7 @@ Built with [`pulldown-cmark`](https://crates.io/crates/pulldown-cmark) and [`cla
 ### Clone and build:
 
 ```bash
-git clone https://github.com/yourusername/md2html.git
+git clone https://github.com/abhkpr/md2html.git
 cd md2html
 cargo build --release
 
